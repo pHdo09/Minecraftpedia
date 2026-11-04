@@ -1,12 +1,5 @@
 """Cria e popula o banco no Neon (PostgreSQL) a partir dos scripts de BD I.
 
-Por que este script existe?
-No PostgreSQL, identificadores sem aspas com letras acentuadas (INVENTÁRIO,
-Nível, DOMESTICAÇãO_MOB...) ficam com maiúsculas/minúsculas misturadas e
-quebram as chaves estrangeiras (ex.: DOMESTICAÇãO_MOB x DOMESTICAÇÃO_MOB).
-Aqui os NOMES de tabelas e colunas são convertidos para minúsculas sem
-acento (inventario, nivel, domesticacao_mob). Os DADOS não são alterados.
-
 Uso:
     export DATABASE_URL="postgresql://usuario:senha@host/db?sslmode=require"
     python setup_db.py            # recria tudo (apaga as tabelas do projeto)
