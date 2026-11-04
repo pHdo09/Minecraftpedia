@@ -562,7 +562,7 @@ def art_receita(nome):
             if comb:
                 entrada = ("<div class='coluna'>" + entrada
                            + "<div class='grade' style='grid-template-columns:92px'>"
-                           + "".join(slot({"item": "🔥 " + x["item"], "quantidade": x["quantidade"]}, " comb") for x in comb)
+                           + "".join(slot({"item": x["item"], "quantidade": x["quantidade"]}, " comb") for x in comb)
                            + "</div></div>")
         st.markdown(f"<div class='linha'>{entrada}<span class='seta'>=</span>{res}</div>", unsafe_allow_html=True)
         if comb:
