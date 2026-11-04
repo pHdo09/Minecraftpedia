@@ -1,4 +1,3 @@
-"""Minecraftpédia: uma wiki navegável sobre o banco de dados de Minecraft (BD I)."""
 import html
 import os
 import random
